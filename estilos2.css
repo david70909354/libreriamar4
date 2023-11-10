@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('fondo4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Estilos de navegación */
+header {
+	width: 100%;
+}
+
+.navegacion {
+	width: 100%;
+	margin: 20px auto;
+	background: #fff; /* Cambiado el valor del color */
+}
+
+.navegacion ul {
+	list-style: none;
+}
+
+.menu > li {
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4112e9; 
+    color: #fff; 
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-radius: 20px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu > li > a:hover {
+    background-color: #4112e9; 
+    color: #fff;
+    box-shadow: 0 0 10px rgba(250, 249, 249, 0.3); /* Corregido el valor del color y la declaración de sombra */
+}
+
+/* Estilos de submenús */
+.submenu,
+.submenu1 {
+	position: absolute;
+	background: #fff; /* Cambiado el color para ambos submenús */
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.submenu li a,
+.submenu1 li a {
+	display: block;
+	padding: 15px;
+	color: #4112e9;
+	font-family: 'Open Sans', sans-serif; /* Corregido el nombre de la fuente */
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.menu li:hover .submenu,
+.menu li:hover .submenu1 {
+	visibility: visible;
+	opacity: 1;
+}
